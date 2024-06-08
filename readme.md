@@ -14,7 +14,7 @@ A simple calculator application built using HTML, CSS, and JavaScript.
 - JavaScript
 
 ## Prerequisites
-To view or edit this project, you need a web browser and a text editor.
+To view or edit this project, you need a web browser and a text editor(preferrebly VSCode).
 
 
 ## Usage
