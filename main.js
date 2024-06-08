@@ -51,13 +51,13 @@ clear.addEventListener("click",(e) => {
 // for mobile version
 
 for (let button of buttons){
-    button.addEventListener("touchstart", (e) => {
+    button.addEventListener("touchend", (e) => {
         e.stopPropagation();
         input.value = input.value.concat(button.textContent);
     });
 }
 
-equals.addEventListener("touchstart",(e) => {
+equals.addEventListener("touchend",(e) => {
     try{
         e.stopPropagation();
         input.value = input.value.replaceAll("÷","/");
@@ -69,12 +69,12 @@ equals.addEventListener("touchstart",(e) => {
     }
 });
 
-allclear.addEventListener("touchstart",(e) => {
+allclear.addEventListener("touchend",(e) => {
     e.stopPropagation();
     input.value = "" ;
 });
 
-clear.addEventListener("touchstart",(e) => {
+clear.addEventListener("touchend",(e) => {
     e.stopPropagation();
     input.value = input.value.slice(0,input.value.length - 1);
 });
