@@ -5,7 +5,6 @@ body{
 }
 
 .container{
-    min-width: 20vw;
     width: fit-content;
     background-color: black;
     color: white;
