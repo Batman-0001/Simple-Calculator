@@ -52,12 +52,14 @@ clear.addEventListener("click",(e) => {
 
 for (let button of buttons){
     button.addEventListener("touchstart", (e) => {
+        e.stopPropagation();
         input.value = input.value.concat(button.textContent);
     });
 }
 
 equals.addEventListener("touchstart",(e) => {
     try{
+        e.stopPropagation();
         input.value = input.value.replaceAll("÷","/");
         input.value = input.value.replaceAll("×","*");
         input.value = eval(input.value);
@@ -68,9 +70,11 @@ equals.addEventListener("touchstart",(e) => {
 });
 
 allclear.addEventListener("touchstart",(e) => {
+    e.stopPropagation();
     input.value = "" ;
 });
 
 clear.addEventListener("touchstart",(e) => {
+    e.stopPropagation();
     input.value = input.value.slice(0,input.value.length - 1);
 });
