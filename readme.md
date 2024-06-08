@@ -24,10 +24,6 @@ Click the C button to clear the current input.
 
 ## Project Structure
 
-calculator/
-├── index.html
-├── style.css
-└── main.js
 index.html: Contains the structure of the calculator.
 style.css: Contains the styling for the calculator.
 main.js: Contains the JavaScript logic for the calculator.
