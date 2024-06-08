@@ -62,7 +62,7 @@ body{
 
 /*mobile version*/
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 400px) and (pointer: coarse) {
     body{
         width: fit-content;
     }
