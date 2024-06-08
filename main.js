@@ -9,6 +9,7 @@ for (let button of buttons){
             button.style.backgroundColor = "rgb(129, 125, 125)";
         }, 50);
         input.value = input.value.concat(button.textContent);
+        input.focus();
     });
 }
 

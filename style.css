@@ -60,6 +60,24 @@ body{
     color: white;
 }
 
+/*mobile version*/
+
+@media screen and (max-width: 400px) {
+    body{
+        width: fit-content;
+    }
+    .container{
+        position: static;
+    }
+    .buttons{
+        gap: 10px;
+    }
+    .buttons div{
+        padding: 1rem;
+        height: 2rem;
+        width: 1.5rem;
+    }
+}
 
 
 
